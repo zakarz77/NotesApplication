@@ -1,0 +1,123 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set global font styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: hsla(0, 3%, 11%, 0.105); /* Light gray background */
+  color: #007bff; /* Dark gray text */
+}
+
+/* Container styles */
+.container {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; /* White background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+  border-radius: 8px;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  margin-bottom: 10px;
+  text-transform: uppercase; /* Uppercase headings */
+  color: #333; /* Dark gray headings */
+}
+
+h1 {
+  font-size: 2.5rem; /* Larger font size */
+  font-weight: bold; /* Bold font */
+  color: #007bff; /* Blue heading */
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #666; /* Gray text */
+}
+
+/* Links */
+a {
+  color: #000000; /* Blue links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #007bff;
+  text-decoration: none; /* Remove underline on hover */
+}
+.formLabel {
+  color: #666;
+  font-weight: bold;
+}
+/* Form controls */
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  background-color: #f8f9fa; /* Light gray background */
+  color: #333; /* Dark gray text */
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Light blue shadow on focus */
+}
+
+/* Buttons */
+button,
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #007bff; /* Blue button */
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+}
